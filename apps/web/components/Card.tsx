@@ -41,7 +41,7 @@ const throwIconClass = cva("text-red-600", {
     size: {
       tiny: "w-4 aspect-square",
       small: " w-5 aspect-square",
-      normal: " w-6 aspect-square",
+      normal: " w-5 md:w-6 aspect-square",
       big: " w-8 aspect-square",
     },
   },
