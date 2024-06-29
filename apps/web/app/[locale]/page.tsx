@@ -43,7 +43,7 @@ const IndexServerPage = ({ searchParams, params }: IndexServerPageProps) => {
           </div>
           <div className="w-full grid grid-cols-1 grid-flow-row h-4/6">
             <div className="h-full flex items-center justify-center">
-              <div className="bg-container border-2 border-black px-16 py-12 rounded-xl md:w-3/6 max-w-2xl flex flex-col items-center">
+              <div className="bg-container border-2 border-black px-12 md:px-16 py-8 md:py-12 rounded-xl md:w-3/6 max-w-2xl flex flex-col items-center">
                 <h1 className="mb-5">
                   <Image
                     src="/svg/logo.svg"
