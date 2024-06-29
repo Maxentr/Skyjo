@@ -29,15 +29,15 @@ const IndexServerPage = ({ searchParams, params }: IndexServerPageProps) => {
   return (
     <>
       <div className="bg-body flex flex-col">
-        <div className="h-dvh !p-6 bg-body flex flex-col">
-          <div className="w-full grid grid-cols-3 grid-flow-row h-1/6">
+        <div className="h-dvh !p-6 bg-body flex flex-col gap-4 md:gap-0">
+          <div className="w-full grid grid-cols-3 grid-flow-row min-h-1/6 h-fit">
             <div></div>
             <div></div>
             <div className="flex flex-row justify-end">
               <div className="w-10 flex flex-col gap-4 z-10">
                 <LanguageSettings locale={params.locale} />
                 <RulesDialog />
-                <FeedbackButton className="mt-4" />
+                <FeedbackButton className="md:mt-4" />
               </div>
             </div>
           </div>
