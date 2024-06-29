@@ -66,10 +66,10 @@ const Lobby = () => {
   return (
     <Dialog open={open}>
       <DialogOverlay>
-        <div className="fixed inset-0 z-20 flex items-center justify-center">
-          <div className="flex flex-col gap-8 items-center w-full max-w-4xl mx-6 lg:mx-0">
-            <div className="flex flex-col sm:flex-row gap-4 w-full">
-              <div className="bg-container border-2 border-black rounded-2xl w-full px-12 py-8 relative">
+        <div className="fixed inset-0 z-20 flex mdh:md:items-center justify-center overflow-auto">
+          <div className="flex flex-col gap-4 md:gap-8 items-center h-fit w-full md:max-w-4xl p-4">
+            <div className="flex flex-col md:flex-row gap-4 w-full">
+              <div className="bg-container border-2 border-black rounded-2xl w-full px-8 md:px-12 py-8 relative">
                 <span className="absolute top-4 right-4">
                   <TooltipProvider delayDuration={200}>
                     <Tooltip>
@@ -100,11 +100,11 @@ const Lobby = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </span>
-                <h2 className="text-slate-900 text-center text-2xl mb-5">
+                <h2 className="text-slate-900 text-center text-2xl mb-2 md:mb-5">
                   {t("settings.title")}
                 </h2>
 
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-4 md:gap-3">
                   <div className="flex flex-row items-center gap-2">
                     <Switch
                       id="skyjo-for-column"
@@ -271,21 +271,20 @@ const Lobby = () => {
                   </div>
                 </div>
                 {isAdmin && (
-                  <div className="flex flex-row justify-center gap-8 mt-8">
+                  <div className="flex flex-row justify-center items-center gap-8 mt-6 md:mt-8">
                     <button onClick={actions.resetSettings}>
                       <p className="underline">
                         {t("settings.reset-settings")}
                       </p>
                     </button>
-
                     <Button onClick={beforeStartGame} disabled={hasMinPlayers}>
                       {t("start-game-button")}
                     </Button>
                   </div>
                 )}
               </div>
-              <div className="hidden md:block bg-container border-2 border-black rounded-2xl w-80 p-8">
-                <h3 className="text-slate-900 text-center text-xl mb-5">
+              <div className="block bg-container border-2 border-black rounded-2xl w-full md:w-80 p-4 md:p-8">
+                <h3 className="text-slate-900 text-center text-xl mb-2 md:mb-5">
                   {t("player-section.title")}
                 </h3>
                 <div className="flex flex-row flex-wrap justify-center gap-2">
