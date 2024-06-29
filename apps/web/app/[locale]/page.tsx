@@ -110,7 +110,7 @@ const IndexServerPage = ({ searchParams, params }: IndexServerPageProps) => {
               <AccordionContent>{t("faq.how-to-win.content")}</AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-5">
-              <AccordionTrigger>
+              <AccordionTrigger className="text-start">
                 {t("faq.play-classic-with-action.title")}
               </AccordionTrigger>
               <AccordionContent>
